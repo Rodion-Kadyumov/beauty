@@ -1,0 +1,98 @@
+.info {
+  display: flex;
+  justify-content: center;
+  background: #E5E5E5;
+  padding: 17px 0;
+  &__link {
+    @extend %fontnormal;
+    color: #333333;
+    margin-right: 30px;
+  }
+  &__link:last-child {
+    margin: 0;
+  }
+  &__link:hover {
+    color: $maincolor;
+  }
+  
+}
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 22vw 50px 22vw;
+  background-color: #FFFFFF;
+  @media screen and (max-width: 820px) {
+    padding: 20px 10vw 50px 10vw;
+  }
+  @media screen and (max-width: 360px) {
+    
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+  }
+  &__image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  &__title {
+    @extend %fontbold;
+    letter-spacing: 0.1em;
+    color: $maincolor;
+  }
+  &__phone {
+    @extend %fontnormal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 40px;
+  }
+  &__phone:hover {
+    color: $maincolor;
+  }
+  &__btn {
+    @extend %fontnormal;
+    cursor: pointer;
+    width: 170px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid $maincolor;
+    border-radius: 40px;
+  }
+  &__btn:hover {
+    background: $maincolor;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 20px $maincolor, 0px 0px 40px $maincolor, 0px 0px 80px $maincolor;
+  }
+  
+}
+
+.line {
+  border: 1px solid #EFEFEF;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding:  30px 0px;
+  background-color: #FFFFFF;
+  &__link {
+    cursor: pointer;
+    @extend %fontnormal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-right: 40px;
+  }
+  &__link:last-child {
+    margin: 0;
+  }
+  &__link:hover {
+    color: $maincolor;
+  }
+}
