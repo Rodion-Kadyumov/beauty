@@ -106,7 +106,7 @@ body {
 }
 .info__link {
   color: #333333;
-  margin-right: 30px;
+  margin-right: 2vw;
 }
 .info__link:last-child {
   margin: 0;
@@ -114,7 +114,6 @@ body {
 .info__link:hover {
   color: #66C05D;
 }
-
 .company {
   display: flex;
   justify-content: space-between;
@@ -125,6 +124,12 @@ body {
 @media screen and (max-width: 820px) {
   .company {
     padding: 20px 10vw 50px 10vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .company {
+    flex-wrap: nowrap;
+    padding: 20px 12px;
   }
 }
 .company__logo {
@@ -178,12 +183,25 @@ body {
   padding: 30px 0px;
   background-color: #FFFFFF;
 }
+@media screen and (max-width: 360px) {
+  .navigation {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .navigation nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
 .navigation__link {
   cursor: pointer;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
-  margin-right: 40px;
+  margin-right: 2vw;
 }
 .navigation__link:last-child {
   margin: 0;
@@ -194,7 +212,7 @@ body {
 
 .main {
   background-image: url(/images/banner.png);
-  background-size: 100% 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   margin-bottom: 80px;
   padding: 192px 0px 192px 22vw;
@@ -202,6 +220,12 @@ body {
 @media screen and (max-width: 820px) {
   .main {
     padding: 20px 10vw 50px 10vw;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .main {
+    padding: 0px 0px 20px 5vw;
   }
 }
 .main__title {
@@ -212,11 +236,23 @@ body {
   color: #FFFFFF;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 360px) {
+  .main__title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+}
 .main__description {
   width: 308px;
   line-height: 20px;
   color: #FFFFFF;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 360px) {
+  .main__description {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }
 .main__btn {
   cursor: pointer;
@@ -227,6 +263,12 @@ body {
   color: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 40px;
+}
+@media screen and (max-width: 360px) {
+  .main__btn {
+    width: 250px;
+    margin-left: 30px;
+  }
 }
 .main__btn:hover {
   background: #FFFFFF;
@@ -241,34 +283,36 @@ body {
 @media screen and (max-width: 820px) {
   .exclusive {
     padding: 0 10vw;
+    margin-bottom: 40px;
   }
 }
 .exclusive__title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin-bottom: 38px;
 }
 .exclusive__title h2 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
   color: #000000;
-}
-.exclusive__title img {
-  background: rgba(255, 255, 255, 0.4);
-}
-@media screen and (max-width: 360px) {
-  .exclusive__title img {
-    display: none;
-  }
 }
 .exclusive__block {
   display: flex;
   flex-wrap: nowrap;
   margin: 0 -15px;
 }
+@media screen and (max-width: 820px) {
+  .exclusive__block {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px -15px;
+  }
+}
 .exclusive__cards {
   padding: 0 15px;
+}
+@media screen and (max-width: 820px) {
+  .exclusive__cards {
+    padding: 15px 15px;
+  }
 }
 .exclusive__card {
   display: flex;
@@ -316,13 +360,26 @@ body {
 }
 @media screen and (max-width: 820px) {
   .advertising {
-    margin: 0px 10vw 130px 10vw;
+    margin-bottom: 130px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .advertising {
+    margin-bottom: 40px;
   }
 }
 .advertising__block {
   display: flex;
   flex-wrap: nowrap;
   margin: 0px -15px;
+}
+@media screen and (max-width: 820px) {
+  .advertising__block {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px -15px;
+  }
 }
 @media screen and (max-width: 360px) {
   .advertising__block {
@@ -331,6 +388,11 @@ body {
 }
 .advertising__cards {
   padding: 0 15px;
+}
+@media screen and (max-width: 820px) {
+  .advertising__cards {
+    padding: 15px 15px;
+  }
 }
 .advertising__card {
   position: relative;
@@ -341,10 +403,27 @@ body {
   margin-right: 30px;
   padding: 35px 40px;
 }
-.advertising__card img {
+@media screen and (max-width: 360px) {
+  .advertising__card {
+    align-items: center;
+    border-radius: 10px;
+    width: 80vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .advertising__card img {
+    display: none;
+  }
+}
+.advertising__card .envelope {
   position: absolute;
   right: 40px;
   top: 30px;
+}
+.advertising__card .car {
+  position: absolute;
+  right: 40px;
+  top: 70px;
 }
 .advertising__card:last-child {
   margin-right: 0;
@@ -360,6 +439,16 @@ body {
   color: #FFFFFF;
   padding-bottom: 25px;
   width: 10vw;
+}
+@media screen and (max-width: 820px) {
+  .advertising__description {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .advertising__description {
+    width: 60vw;
+  }
 }
 .advertising__mail {
   width: 225px;
@@ -394,7 +483,18 @@ body {
 }
 @media screen and (max-width: 820px) {
   .footer__data {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding: 37px 10vw;
+  }
+}
+@media screen and (max-width: 360px) {
+  .footer__data {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
   }
 }
 .footer__data img {
@@ -406,14 +506,27 @@ body {
   border-radius: 50%;
   margin-right: 20px;
 }
+@media screen and (max-width: 820px) {
+  .footer__data img {
+    margin-bottom: 15px;
+  }
+}
 @media screen and (max-width: 360px) {
   .footer__data img {
-    margin-right: 2px;
+    margin-right: 24px;
+  }
+  .footer__data img img:last-child {
+    margin: 0;
   }
 }
 .footer__data p {
   color: #000000;
   margin-right: 105px;
+}
+@media screen and (max-width: 360px) {
+  .footer__data p {
+    margin: 0;
+  }
 }
 .footer__data a {
   line-height: 19px;
@@ -429,6 +542,11 @@ body {
   background: #FFFFFF;
   border: 2px solid #66C05D;
   border-radius: 40px;
+}
+@media screen and (max-width: 360px) {
+  .footer__data button {
+    width: 280px;
+  }
 }
 .footer__data button:hover {
   background: #66C05D;
