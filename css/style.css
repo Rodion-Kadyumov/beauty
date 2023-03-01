@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.footer__company p, .footer__data a, .footer__data p, .advertising__mail, .advertising__description, .exclusive__description, .main__btn, .main__description, .navigation__link, .company__btn, .company__phone, .info__link {
+.footer__company p, .footer__data a, .footer__data p, .advertising__mail, .advertising__description, .exclusive .allexe a, .exclusive__description, .main__btn, .main__description, .navigation__link, .company__btn, .company__phone, .info__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -114,6 +114,7 @@ body {
 .info__link:hover {
   color: #66C05D;
 }
+
 .company {
   display: flex;
   justify-content: space-between;
@@ -315,6 +316,11 @@ body {
     padding: 15px 15px;
   }
 }
+@media screen and (max-width: 360px) {
+  .exclusive__cards_del {
+    display: none;
+  }
+}
 .exclusive__card {
   display: flex;
   flex-direction: column;
@@ -358,6 +364,23 @@ body {
   color: #66C05D;
   box-shadow: 0px 0px 20px #66C05D, 0px 0px 40px #66C05D, 0px 0px 80px #66C05D;
 }
+.exclusive .allexe {
+  display: none;
+}
+@media screen and (max-width: 360px) {
+  .exclusive .allexe {
+    display: block;
+  }
+}
+.exclusive .allexe a {
+  cursor: pointer;
+  color: #000000;
+  margin-left: 30vw;
+}
+.exclusive .allexe a:hover {
+  color: #66C05D;
+}
+
 .advertising {
   padding: 0px 22vw 130px 22vw;
 }

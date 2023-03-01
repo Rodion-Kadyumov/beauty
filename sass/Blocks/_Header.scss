@@ -14,9 +14,6 @@
   &__link:hover {
     color: $maincolor;
   }
-  @media screen and (max-width: 360px) {
-    
-  }
 }
 .company {
   display: flex;
@@ -101,9 +98,6 @@
     line-height: 19px;
     color: #000000;
     margin-right: 2vw;
-    @media screen and (max-width: 360px) {
-      
-    }
   }
   &__link:last-child {
     margin: 0;
