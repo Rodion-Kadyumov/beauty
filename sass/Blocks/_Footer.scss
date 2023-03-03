@@ -4,19 +4,13 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 37px 22vw;
+    padding: 37px;
     background-color: #FFFFFF;
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 767px) {
       display: grid;
-      justify-content: center;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      padding: 37px 10vw;
-    }
-    @media screen and (max-width: 360px) {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
+      padding: 37px;
     }
     .link {
       display: flex;
@@ -39,9 +33,6 @@
       @extend %fontnormal;
       color: #000000;
       margin-right: 105px;
-      @media screen and (max-width: 360px) {
-        margin: 0;
-      }
     }
     a {
       @extend %fontnormal;
@@ -58,9 +49,6 @@
       background: #FFFFFF;
       border: 2px solid $maincolor;
       border-radius: 40px;
-      @media screen and (max-width: 360px) {
-        width: 280px;
-      }
     }
     button:hover {
       background: $maincolor;
@@ -71,12 +59,7 @@
   &__company {
     display: flex;
     justify-content: space-between;
-    padding: 25px 22vw;
-    @media screen and (max-width: 820px) {
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 25px 10vw;
-    }
+    padding: 25px;
     p {
       @extend %fontnormal;
       font-size: 12px;

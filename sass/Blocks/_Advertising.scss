@@ -1,46 +1,42 @@
 .advertising {  
-  padding: 0px 22vw 130px 22vw;
-  @media screen and (max-width: 820px) {
-    margin-bottom: 130px;
-    padding: 0;
-  }
-  @media screen and (max-width: 360px) {
-    margin-bottom: 40px;
+  padding: 130px 0;
+  @media screen and (max-width: 1200px) {
+    padding: 80px 0;
   }
   &__block {
     display: flex;
     flex-wrap: nowrap;
     margin: 0px -15px;
-    @media screen and (max-width: 820px) {
-      flex-wrap: wrap;
+    @media screen and (max-width: 767px) {
       justify-content: center;
-      margin: -15px -15px;
-    }
-    @media screen and (max-width: 360px) {
-      flex-wrap: wrap;
-    }
+        flex-wrap: wrap;
+        margin: -15px -15px;
+      }
   }
   &__cards {
     padding: 0 15px;
-    @media screen and (max-width: 820px) {
+    @media screen and (max-width: 767px) {
       padding: 15px 15px;
     }
   }
   &__card {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 540px;
     background: $maincolor;
     margin-right: 30px;
     padding: 35px 40px;
-    @media screen and (max-width: 360px) {
+    @media screen and (max-width: 991px) {
       align-items: center;
+      width: 43.5vw;
+      display: flex;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 767px) {
       border-radius: 10px;
       width: 80vw;
     }
     img {
-      @media screen and (max-width: 360px) {
+      @media screen and (max-width: 991px) {
         display: none;
       }
     }
@@ -70,13 +66,6 @@
     line-height: 20px;
     color: #FFFFFF;
     padding-bottom: 25px;
-    width: 12vw;
-    @media screen and (max-width: 820px) {
-      width: 25vw;
-    }
-    @media screen and (max-width: 360px) {
-      width: 60vw;
-    }
   }
   &__mail {
     @extend %fontnormal;
